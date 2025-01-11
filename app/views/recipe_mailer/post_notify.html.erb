@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>hey there!</title>
+   </head>
+   <body>
+      <h1>hey there! wanna try <%=@recipe.title%></h1>
+       <div>
+          <%=if @filename
+              image_tag(attachments[@filename].url)
+            end%>
+       </div>
+   </body>
+</html>
